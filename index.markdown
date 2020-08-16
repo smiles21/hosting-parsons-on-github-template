@@ -3,47 +3,44 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Multiple Parson's Problems on One Page
+title: Scottie's Parsons Tutorial For Mom
 ---
 # Parsons Practice
 
-## Parsons 1 (Line Based Grader)
+## Mom's Tutorial
 Re-arrange the blocks below so they print out "Hello World!"
 
-<div id="p1-sortableTrash" class="sortable-code"></div>
-<div id="p1-sortable" class="sortable-code"></div>
-<div style="clear:both;"></div>
-<p>
-    <input id="p1-feedbackLink" value="Get Feedback" type="button" />
-    <input id="p1-newInstanceLink" value="Reset Problem" type="button" />
-</p>
-<script type="text/javascript">
-(function() {
-  var initial = "print(\"Hello\")\n" +
-    "print(\" \")\n" +
-    "print(\"World\")\n" +
-    "print(\"!\")";
+<div id="Hello-sortableTrash" class="sortable-code"></div> 
+<div id="Hello-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="Hello-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Hello-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "hello\n" +
+    "goodbye";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "p1-sortable",
+    "sortableId": "Hello-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
-    "can_indent": false,
+    "can_indent": true,
     "x_indent": 50,
-    "lang": "en",
-    "trashId": "p1-sortableTrash"
+    "lang": "en"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#p1-newInstanceLink").click(function(event){
-      event.preventDefault();
-      parsonsPuzzle.shuffleLines();
-  });
-  $("#p1-feedbackLink").click(function(event){
-      event.preventDefault();
-      parsonsPuzzle.getFeedback();
-  });
-})();
+  $("#Hello-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#Hello-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
 </script>
 
 
