@@ -55,7 +55,7 @@ Re-arrange the blocks below so they print out "Hello World!"
 <script type="text/javascript"> 
 (function(){
   var initial = "print(\"hello\")\n" +
-    "print(\" \")\n" +
+    "How long can i make this text field it really needs to be quite long and it needs to fill a pretty good amount of space I think" +
     "print(\"world\")\n" +
     "print(\".\")";
   var parsonsPuzzle = new ParsonsWidget({
