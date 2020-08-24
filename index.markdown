@@ -20,7 +20,7 @@ Re-arrange the blocks below so they print out "Hello World!"
 <script type="text/javascript"> 
 (function(){
   var initial = "hello\n" +
-    "goodbye";
+    "How long can i make this text field it really needs to be quite long and it needs to fill a pretty good amount of space I think";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "Hello-sortable",
     "max_wrong_lines": 10,
